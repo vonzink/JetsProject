@@ -33,34 +33,34 @@ public class JetData {
 				double speed = Double.parseDouble(fields[3]);
 				int range = Integer.parseInt(fields[4]);
 				long price = Long.parseLong(fields[5]);
-				long capacity = Long.parseLong(fields[6]);
+				int capacity = Integer.parseInt(fields[6]);
 				long payload = Long.parseLong(fields[7]);
 				
 				Jet j = null; 
 				
 				switch (classification) {
-                case "B":
+                case "Bomber":
                     j = new Bomber(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "C":
+                case "CargoPlane":
                     j = new CargoPlane(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "M":
+                case "CommercialJet":
                     j = new CommercialJet(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "D":
+                case "Drone":
                     j = new Drone(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "F":
+                case "FighterJet":
                     j = new FighterJet(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "I":
+                case "Interceptor":
                     j = new Interceptor(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "P":
+                case "PrivateJet":
                     j = new PrivateJet(jetName, model, speed, range, price, capacity, payload);
                     break;
-                case "R":
+                case "ReconJet":
                     j = new ReconJet(jetName, model, speed, range, price, capacity, payload);
                     break;
                 default:

@@ -1,26 +1,25 @@
-Classification,JetName,Model,Speed,Range,Price,Capacity,Payload
-Bomber, 		Bomber One, 	B-101, 	600.0, 	3000,	50000000, 	2, 20000
-Bomber, 		Bomber Two,		B-102,	620.0,	3200,	52000000,	2,	21000
-Bomber, 		Bomber Three,	B-103,	610.0,	3100,	51000000,	2,	20500
-Cargo Plane, 	Cargo One,		C-201,	500.0,	4000,	40000000,	4,	30000
-Cargo Plane, 	Cargo Two,		C-202,	510.0,	4100,	41000000,	4,	31000
-Cargo Plane, 	Cargo Three,	C-203,	520.0,	4200,	42000000,	4,	32000
-Commercial Jet, Commercial One,	CJ-301,	550.0,	5000,	60000000,	150,15000
-Commercial Jet, Commercial Two,	CJ-302,	560.0,	5100,	61000000,	160,15500
-Commercial Jet, Commercial Three,CJ-303,570.0,	5200,	62000000,	155,15700
-Drone,			Drone One, 		D-401,	300.0,	1000,	1000000,	0,	500
-Drone,			Drone Two, 		D-402,	320.0,	1100,	1200000,	0,	600
-Drone,			Drone Three, 	D-403,	310.0,	1050,	1100000,	0,	550
-FighterJet, 	Fighter One,	FJ-501,	1500.0,	2000,	80000000,	1,	8000
-FighterJet,		Fighter Two,	FJ-502,	1550.0,	2100,	81000000,	1,	8200
-FighterJet,		Fighter Three,	FJ-503,	1520.0,	2050,	80500000,	1,	8100
-Interceptor,	Interceptor One,I-601,	1600.0,	1800,	90000000,	1,	7500
-Interceptor,	Interceptor Two,I-602,	1610.0,	1820,	91000000,	1,	7600
-Interceptor,	Interceptor Three,I-603,1590.0,	1780,	90500000,	1,	7550
-Private Jet,	Private One,	PJ-701,	700.0,	3500,	40000000,	10,	5000
-Private Jet,	Private Two,	PJ-702,	710.0,	3550,	41000000,	12,	5200
-Private Jet,	Private Three,	PJ-703,	705.0,	3520,	40500000,	11,	5100
-Recon Jet,		Recon One,		RJ-801,	850.0,	2500,	35000000,	1,	3000
-Recon Jet,		Recon Two,		RJ-802,	860.0,	2550,	36000000,	1,	3100
-Recon Jet,		Recon Three,	RJ-803,	855.0,	2520,	35500000,	1,	3050
-Recon Jet,		Recon Four,		RJ-804,	865.0,	2600,	36500000,	1,	3150
+Bomber,Bomber One,B-101,600.0,3000,50000000,2,20000
+Bomber,Bomber Two,B-102,620.0,3200,52000000,2,21000
+Bomber,Bomber Three,B-103,610.0,3100,51000000,2,20500
+CargoPlane,Cargo One,C-201,500.0,4000,40000000,4,30000
+CargoPlane,Cargo Two,C-202,510.0,4100,41000000,4,31000
+CargoPlane,Cargo Three,C-203,520.0,4200,42000000,4,32000
+CommercialJet,Commercial One,CJ-301,550.0,5000,60000000,150,15000
+CommercialJet,Commercial Two,CJ-302,560.0,5100,61000000,160,15500
+CommercialJet,Commercial Three,CJ-303,570.0,5200,62000000,155,15700
+Drone,Drone One,D-401,300.0,1000,1000000,0,500
+Drone,Drone Two,D-402,320.0,1100,1200000,0,600
+Drone,Drone Three,D-403,310.0,1050,1100000,0,550
+FighterJet,Fighter One,FJ-501,1500.0,2000,80000000,1,8000
+FighterJet,Fighter Two,FJ-502,1550.0,2100,81000000,1,8200
+FighterJet,Fighter Three,FJ-503,1520.0,2050,80500000,1,8100
+Interceptor,Interceptor One,I-601,1600.0,1800,90000000,1,7500
+Interceptor,Interceptor Two,I-602,1610.0,1820,91000000,1,7600
+Interceptor,Interceptor Three,I-603,1590.0,1780,90500000,1,7550
+PrivateJet,Private One,PJ-701,700.0,3500,40000000,10,5000
+PrivateJet,Private Two,PJ-702,710.0,3550,41000000,12,5200
+PrivateJet,Private Three,PJ-703,705.0,3520,40500000,11,5100
+ReconJet,Recon One,RJ-801,850.0,2500,35000000,1,3000
+ReconJet,Recon Two,RJ-802,860.0,2550,36000000,1,3100
+ReconJet,Recon Three,RJ-803,855.0,2520,35500000,1,3050
+ReconJet,Recon Four,RJ-804,865.0,2600,36500000,1,3150

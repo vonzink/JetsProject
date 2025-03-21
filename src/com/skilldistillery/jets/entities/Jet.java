@@ -2,20 +2,25 @@ package com.skilldistillery.jets.entities;
 
 public abstract class Jet {
 
+	private String classification; 
+	private String jetName; 
 	private String model; 
 	private double speed; 
 	private int range;
 	private long price;
 	private int capacity; 
-	private String payload; 
-	
+	private long payload;
 	public Jet() {
 		super();
 		// TODO Auto-generated constructor stub
+		
+		
 	}
-
-	public Jet(String model, double speed, int range, long price, int capacity, String payload) {
+	public Jet(String classification, String jetName, String model, double speed, int range, long price, int capacity,
+			long payload) {
 		super();
+		this.classification = classification;
+		this.jetName = jetName;
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
@@ -23,17 +28,18 @@ public abstract class Jet {
 		this.capacity = capacity;
 		this.payload = payload;
 	}
-
-	public void fly () {
-		System.out.println("prints data");
-
+	public String getClassification() {
+		return classification;
 	}
-	
-	
-	public void getSpeedInMach() {
+	public void setClassification(String classification) {
+		this.classification = classification;
 	}
-	
-	
+	public String getJetName() {
+		return jetName;
+	}
+	public void setJetName(String jetName) {
+		this.jetName = jetName;
+	}
 	public String getModel() {
 		return model;
 	}
@@ -64,23 +70,19 @@ public abstract class Jet {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-	public String getPayload() {
+	public long getPayload() {
 		return payload;
 	}
-	public void setPayload(String payload) {
+	public void setPayload(long payload) {
 		this.payload = payload;
 	}
-
 	@Override
 	public String toString() {
 		return String.format(
-				"Jet [model=%s, speed=%s, range=%s, price=%s, capacity=%s, payload=%s, getModel()=%s, getSpeed()=%s, getRange()=%s, getPrice()=%s, getCapacity()=%s, getPayload()=%s, getClass()=%s, hashCode()=%s, toString()=%s]",
-				model, speed, range, price, capacity, payload, getModel(), getSpeed(), getRange(), getPrice(),
-				getCapacity(), getPayload(), getClass(), hashCode(), super.toString());
+				"Jet class: %s, jetName: %s, model: %s, speed: %s, range: %s, price: %s, capacity: %s, payload: %s",
+				classification, jetName, model, speed, range, price, capacity, payload);
 	} 
 	
 	
 	
-	
 }
-
