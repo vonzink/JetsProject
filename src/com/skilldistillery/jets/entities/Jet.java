@@ -10,11 +10,9 @@ public abstract class Jet {
 	private long price;
 	private int capacity; 
 	private long payload;
+	
 	public Jet() {
-		super();
-		// TODO Auto-generated constructor stub
-		
-		
+		super();	
 	}
 	public Jet(String classification, String jetName, String model, double speed, int range, long price, int capacity,
 			long payload) {
@@ -27,6 +25,11 @@ public abstract class Jet {
 		this.price = price;
 		this.capacity = capacity;
 		this.payload = payload;
+	}
+	
+	public void fly () {
+		System.out.println("clear for takeoff!");
+
 	}
 	public String getClassification() {
 		return classification;
@@ -79,7 +82,7 @@ public abstract class Jet {
 	@Override
 	public String toString() {
 		return String.format(
-				"Jet class: %s, jetName: %s, model: %s, speed: %s, range: %s, price: %s, capacity: %s, payload: %s",
+				"	Jet class: %s%n	jetName: %s,%n 	model: %s%n	speed: %s MPH%n	range: %s mile%n	price: $%s%n	capacity: %s lbs%n	payload: %s lbs%n",
 				classification, jetName, model, speed, range, price, capacity, payload);
 	} 
 	
