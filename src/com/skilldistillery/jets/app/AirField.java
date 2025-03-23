@@ -15,10 +15,15 @@ public class AirField {
 	public List<Jet> printJets(String fileName) {
 		List<Jet> jets = new ArrayList<>();
 		try (BufferedReader bufIn = new BufferedReader(new FileReader(fileName))) {
+			bufIn.readLine(); 
+			
 			String line; // creates a variable
 			Jet j = null;
+			
 
 			while ((line = bufIn.readLine()) != null) {
+				
+				 
 				String[] fields = line.split(",");
 					String classification = fields[0];
 					String jetName = fields[1];

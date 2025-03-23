@@ -18,19 +18,18 @@ public abstract class Jet {
 
 	}
 	public Jet(String classification, String jetName, String model, double speed, double range, long price,
-			int capacity, long payload, String pilot) {
-		super();
-		this.classification = classification;
-		this.jetName = jetName;
-		this.model = model;
-		this.speed = speed;
-		this.range = range;
-		this.price = price;
-		this.capacity = capacity;
-		this.payload = payload;
-		this.pilot = pilot;
-	
+	    int capacity, long payload, String pilot) {
+	    this.classification = classification;
+	    this.jetName = jetName;
+	    this.model = model;
+	    this.speed = speed;
+	    this.range = range;
+	    this.price = price;
+	    this.capacity = capacity;
+	    this.payload = payload;
+	    this.pilot = pilot;
 	}
+	
 	public void fly() {
 		System.out.println("clear for takeoff!");
 	}
@@ -99,7 +98,7 @@ public abstract class Jet {
 	@Override
 	public String toString() {
 		return String.format(
-				"	Jet class: %s%n	jetName: %s,%n 	model: %s%n	speed: %s MPH%n	range: %s mile%n	price: $%s%n	capacity: %s lbs%n	payload: %s lbs%n pilot: %s%n",
+				"Jet Type: %s%n	Jet Name: %s,%n 	model: %s%n	Speed: %s MPH%n	Range: %s mile%n	Price: $%s%n	Capacity: %s lbs%n	Payload: %s lbs%n Pilot: %s%n",
 				classification, jetName, model, speed, range, price, capacity, payload, pilot);
 	
 	}

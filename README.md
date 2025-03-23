@@ -38,6 +38,10 @@ Have your code create at least 2 instances of each of these implementing classes
 
  - make sure the text and parameter order matches up perfectly. 
  - add the Abstract method to the interface right away so Eclise will create the    Override Method. 
+ - use bufIn.readLine() to skip the header in the datat if there is one
+ - check or redo the constructor when changing datatypes
+ - .trim() dosnt always work to eliminate whitespace on both sides of a split character. 
+
 
 
  ## Notes

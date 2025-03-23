@@ -9,7 +9,7 @@ public class PrivateJet extends Jet implements CargoCarrier {
 	
 	@Override
 	public void fly() {
-		 System.out.printf("%s %s clear for takeoff, speed: %.2f, range: %d, price: %d, flight time: %.2f hours %n", 
+		 System.out.printf("%s %s clear for takeoff, speed: %.2f, range: %.2f, price: %d, flight time: %.2f hours %n", 
                  getJetName(), getModel(), getSpeed(), getRange(), getPrice(), getFlightTime());
 	}
 	
