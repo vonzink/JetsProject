@@ -1,6 +1,5 @@
 # JetsProject
 
-# Make Change Project
 
 ## Description
 
@@ -20,10 +19,29 @@ Have your code create at least 2 instances of each of these implementing classes
  - Git/GitHub
  - Sublime Text Editor
  - zsh
+ - Slack lessons
 
  ## Concepts Applied
 
-  - Conditional Statements
-  - Mod
+    - Conditional Statements
+    - Mod
+    - Interface / Abstract
+    - buffer reader / writer
+    - getters / setters
+    - constructors
+    - CSV .txt
+    - exception handling useing try/catch block
+    - Array lists
+    - UML
 
  ## Lessons Learned
+
+ - make sure the text and parameter order matches up perfectly. 
+ - add the Abstract method to the interface right away so Eclise will create the    Override Method. 
+
+
+ ## Notes
+ seperating menu from main to keep it cleaner added some additional data. 
+ setup some Overloaded methods for additional lines of information in my edited text file. edited the Jet toString for better formatting. 
+ added the flighttime equation to the getter in Jet class. 
+

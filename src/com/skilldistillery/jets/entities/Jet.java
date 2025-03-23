@@ -6,16 +6,19 @@ public abstract class Jet {
 	private String jetName; 
 	private String model; 
 	private double speed; 
-	private int range;
+	private double range;
 	private long price;
 	private int capacity; 
 	private long payload;
+	private String pilot; 
+	private double flightTime; 
 	
 	public Jet() {
 		super();	
+
 	}
-	public Jet(String classification, String jetName, String model, double speed, int range, long price, int capacity,
-			long payload) {
+	public Jet(String classification, String jetName, String model, double speed, double range, long price,
+			int capacity, long payload, String pilot) {
 		super();
 		this.classification = classification;
 		this.jetName = jetName;
@@ -25,11 +28,11 @@ public abstract class Jet {
 		this.price = price;
 		this.capacity = capacity;
 		this.payload = payload;
-	}
+		this.pilot = pilot;
 	
-	public void fly () {
+	}
+	public void fly() {
 		System.out.println("clear for takeoff!");
-
 	}
 	public String getClassification() {
 		return classification;
@@ -55,7 +58,7 @@ public abstract class Jet {
 	public void setSpeed(double speed) {
 		this.speed = speed;
 	}
-	public int getRange() {
+	public double getRange() {
 		return range;
 	}
 	public void setRange(int range) {
@@ -79,13 +82,26 @@ public abstract class Jet {
 	public void setPayload(long payload) {
 		this.payload = payload;
 	}
+	public double getFlightTime() {
+		flightTime = (getRange() / getSpeed()); 
+		return flightTime;
+	}
+	public void setFlightTime(double flightTime) {
+		this.flightTime = flightTime;
+	} 
+	
+	public String getPilot() {
+		return pilot;
+	}
+	public void setPilot(String pilot) {
+		this.pilot = pilot;
+	}
 	@Override
 	public String toString() {
 		return String.format(
-				"	Jet class: %s%n	jetName: %s,%n 	model: %s%n	speed: %s MPH%n	range: %s mile%n	price: $%s%n	capacity: %s lbs%n	payload: %s lbs%n",
-				classification, jetName, model, speed, range, price, capacity, payload);
-	} 
+				"	Jet class: %s%n	jetName: %s,%n 	model: %s%n	speed: %s MPH%n	range: %s mile%n	price: $%s%n	capacity: %s lbs%n	payload: %s lbs%n pilot: %s%n",
+				classification, jetName, model, speed, range, price, capacity, payload, pilot);
 	
-	
+	}
 	
 }
