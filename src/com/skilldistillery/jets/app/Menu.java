@@ -2,7 +2,7 @@ package com.skilldistillery.jets.app;
 
 import java.util.List;
 import java.util.Scanner;
-
+import com.skilldistillery.jets.entities.CargoCarrier;
 import com.skilldistillery.jets.entities.Jet;
 
 public class Menu {
@@ -78,11 +78,18 @@ public class Menu {
 			case 5:
 				System.out.println("	    LIST ALL CARGO JETS         ");
 				System.out.println("------------------------------------");
-				// make list of all subclass with the interface of CargoCarrier
+				for (Jet i : jets) {
+					if (i instanceof CargoCarrier) {
+						System.out.println(i);
+					}
+				}
 				break;
 			case 6:
 				System.out.println("	         DOGFIGHT               ");
 				System.out.println("------------------------------------");
+
+				FightMenu fm = new FightMenu();  
+				fm.fightMenu(); 
 				// need a fight menu
 				// make a list of all subclass with the interface Combat Ready
 				// create a random value to assign to each

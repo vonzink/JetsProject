@@ -15,27 +15,28 @@ public class AirField {
 	public List<Jet> printJets(String fileName) {
 		List<Jet> jets = new ArrayList<>();
 		try (BufferedReader bufIn = new BufferedReader(new FileReader(fileName))) {
-			bufIn.readLine(); 
 			
 			String line; // creates a variable
 			Jet j = null;
 			
-
-			while ((line = bufIn.readLine()) != null) {
+	while ((line = bufIn.readLine()) != null) {
 				
-				 
-				String[] fields = line.split(",");
-					String classification = fields[0];
-					String jetName = fields[1];
-					String model = fields[2];
-					double speed = Double.parseDouble(fields[3]);
-					double range = Double.parseDouble(fields[4]);
-					long price = Long.parseLong(fields[5]);
-					int capacity = Integer.parseInt(fields[6]);
-					long payload = Long.parseLong(fields[7]);
-					String pilot = fields[8]; 
+				ArrayList<String> list = new ArrayList<>(); 
+				String[] jet = line.split(",");
+				for (String i : jet) {
+				list.add(i);
+				}
+					String classification = list.get(0);
+					String jetName = list.get(1);
+					String model = list.get(2);
+					double speed = Double.parseDouble(list.get(3));
+					double range = Double.parseDouble(list.get(4));
+					long price = Long.parseLong(list.get(5));
+					int capacity = Integer.parseInt(list.get(6));
+					long payload = Long.parseLong(list.get(7));
+					String pilot = list.get(8); 
 
-
+		
 					switch (classification) {
 					case "Bomber":
 						j = new Bomber(jetName, model, speed, range, price, capacity, payload, pilot);
