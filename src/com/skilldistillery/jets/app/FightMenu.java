@@ -38,23 +38,23 @@ public class FightMenu {
                 case 1:
                     System.out.println("           LIST COMBAT PLANES       ");
                     System.out.println("------------------------------------");
-                    for (Jet jet : jets) {
-                        if (jet instanceof CombatReady) {
-                            System.out.println(jet);
+                    for (Jet i : jets) {
+                        if (i instanceof CombatReady) {
+                            System.out.println(i);
                         }
                     }
                     break;
                 case 2:
-                    System.out.println("           LIST COMBAT PLANES       ");
+                    System.out.println("          ADD A PLANE     ");
                     System.out.println("------------------------------------");
-                    for (Jet jet : jets) {
-                        if (jet instanceof CombatReady) {
-                            System.out.println(jet);
+                    for (Jet i : jets) {
+                        if (i instanceof CombatReady) {
+                            System.out.println(i);
                         }
                     }
                     break;
                 case 3:
-                    System.out.println("           LIST COMBAT PLANES       ");
+                    System.out.println("         CHOOSE YOUR PLANES       ");
                     System.out.println("------------------------------------");
                     for (Jet jet : jets) {
                         if (jet instanceof CombatReady) {
@@ -63,13 +63,22 @@ public class FightMenu {
                     }
                     break;
                 case 4:
-                    System.out.println("       RETURN TO MAIN MENU          ");
+                    System.out.println("        BATTLE     ");
                     System.out.println("------------------------------------");
-                   
-                   Menu menu = new Menu(); 
-                   menu.displayMenu(); 
-
+                    for (Jet jet : jets) {
+                        if (jet instanceof CombatReady) {
+                            System.out.println(jet);
+                        }
+                    }
                     break;
+                case 5:
+                	System.out.println("       RETURN TO MAIN MENU          ");
+                	System.out.println("------------------------------------");
+                	
+                	Menu menu = new Menu(); 
+                	menu.displayMenu(); 
+                	
+                	break;
                 case 9:
                     System.out.println("Quit");
                     break;

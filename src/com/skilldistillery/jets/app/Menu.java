@@ -98,7 +98,9 @@ public class Menu {
 			case 7:
 				System.out.println("	        ADD A JET               ");
 				System.out.println("------------------------------------");
-				// call an Add method that will put information into the jetData.txt
+				AddToAirField addToAirField = new AddToAirField(); 
+				addToAirField.addToAirField(); 
+				
 				break;
 			case 8:
 				System.out.println("	       REMOVE A JET             ");
