@@ -16,7 +16,7 @@ public class Menu {
 		do {
 
 			System.out.println("------------------------------------");
-			System.out.println("          Choose an Option          ");
+			System.out.println("   |      Choose an Option      |    ");
 			System.out.println("------------------------------------");
 
 			System.out.println("1. List fleet                       ");
@@ -105,7 +105,8 @@ public class Menu {
 			case 8:
 				System.out.println("	       REMOVE A JET             ");
 				System.out.println("------------------------------------");
-				// call an Delete method that will pop information into the jetData.txt
+				DeleteFromAirField deleteFromAirField = new DeleteFromAirField(); 
+				deleteFromAirField.deleteFromAirField(); 
 				break;
 			case 9:
 				System.out.println("	Quit      ");

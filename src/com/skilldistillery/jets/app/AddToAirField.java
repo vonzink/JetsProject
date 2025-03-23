@@ -25,7 +25,7 @@ public class AddToAirField {
 
 
 	            System.out.println("------------------------------------");
-	            System.out.println("         Enter Classification:        ");
+	            System.out.println("  |    Enter Classification:     |  ");
 	            System.out.println("------------------------------------");
 	            System.out.println("1. Bomber");
 	            System.out.println("2. CargoPlane");
@@ -88,6 +88,7 @@ public class AddToAirField {
 		payload = sc.nextLine();
 		System.out.println("Enter Pilots Name: ");
 		pilot = sc.nextLine();
+		
 		String newLine = String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s", classification, jetName, model, speed, range,
 				price, capacity, payload, pilot);
 	
