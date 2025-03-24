@@ -8,7 +8,7 @@ public abstract class Jet {
 	private double speed; 
 	private double range;
 	private long price;
-	private int capacity; 
+	private int armor; 
 	private long payload;
 	private String pilot; 
 	private double flightTime; 
@@ -18,14 +18,14 @@ public abstract class Jet {
 
 	}
 	public Jet(String classification, String jetName, String model, double speed, double range, long price,
-	    int capacity, long payload, String pilot) {
+	    int armor, long payload, String pilot) {
 	    this.classification = classification;
 	    this.jetName = jetName;
 	    this.model = model;
 	    this.speed = speed;
 	    this.range = range;
 	    this.price = price;
-	    this.capacity = capacity;
+	    this.armor = armor;
 	    this.payload = payload;
 	    this.pilot = pilot;
 	}
@@ -69,11 +69,11 @@ public abstract class Jet {
 	public void setPrice(long price) {
 		this.price = price;
 	}
-	public int getCapacity() {
-		return capacity;
+	public int getArmor() {
+		return armor;
 	}
-	public void setCapacity(int capacity) {
-		this.capacity = capacity;
+	public void setArmor(int armor) {
+		this.armor = armor;
 	}
 	public long getPayload() {
 		return payload;
@@ -98,8 +98,8 @@ public abstract class Jet {
 	@Override
 	public String toString() {
 		return String.format(
-				"Jet Type: %s%n	Jet Name: %s,%n 	model: %s%n	Speed: %s MPH%n	Range: %s mile%n	Price: $%s%n	Capacity: %s lbs%n	Payload: %s lbs%n Pilot: %s%n",
-				classification, jetName, model, speed, range, price, capacity, payload, pilot);
+				"Jet Type: %s%n	Jet Name: %s,%n 	model: %s%n	Speed: %s MPH%n	Range: %s mile%n	Price: $%s%n	Armor: %s lbs%n	Payload: %s lbs%n Pilot: %s%n",
+				classification, jetName, model, speed, range, price, armor, payload, pilot);
 	
 	}
 	

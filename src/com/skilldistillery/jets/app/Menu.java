@@ -19,21 +19,22 @@ public class Menu {
 			System.out.println("   |      Choose an Option      |    ");
 			System.out.println("------------------------------------");
 
-			System.out.println("1. List fleet                       ");
-			System.out.println("2. Fly all Jets                     ");
-			System.out.println("3. View fastest Jets                ");
-			System.out.println("4. View Jet with the longest range  ");
-			System.out.println("5. Load all Cargo Jets              ");
-			System.out.println("6. DogFight                         ");
+			System.out.println("1. LIST FLEET                       ");
+			System.out.println("2. FLY ALL JETS     	            ");
+			System.out.println("3. FASTEST JET		                ");
+			System.out.println("4. LONGEST RANGE				    ");
+			System.out.println("5. LOAD ALL CARGO JETS              ");
+			System.out.println("6. DOGFIGHT!!                       ");
+			System.out.println();
 			System.out.println("7. Add Jet to Fleet                 ");
 			System.out.println("8. Remove a jet from Fleet          ");
+			System.out.println();
 			System.out.println("9. Quit                             ");
 			System.out.println("------------------------------------");
 
 			try {
 				answer = sc.nextInt();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				System.err.println("invalid number, please enter a number");
 				break;
 			}
@@ -85,15 +86,12 @@ public class Menu {
 				}
 				break;
 			case 6:
-				System.out.println("	         DOGFIGHT               ");
+				System.out.println("	         DOGFIGHT!!             ");
 				System.out.println("------------------------------------");
 
 				FightMenu fm = new FightMenu();  
 				fm.fightMenu(); 
-				// need a fight menu
-				// make a list of all subclass with the interface Combat Ready
-				// create a random value to assign to each
-				// display the winning score and plane
+
 				break;
 			case 7:
 				System.out.println("	        ADD A JET               ");

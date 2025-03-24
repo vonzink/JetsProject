@@ -2,8 +2,8 @@ package com.skilldistillery.jets.entities;
 
 public class ReconJet extends Jet implements CombatReady{
 
-	public ReconJet(String jetName, String model, double speed, double range, long price, int capacity, long payload, String pilot) {
-		super("ReconJet", jetName, model, speed, range, price, capacity, payload, pilot);
+	public ReconJet(String jetName, String model, double speed, double range, long price, int armor, long payload, String pilot) {
+		super("ReconJet", jetName, model, speed, range, price, armor, payload, pilot);
 	}
 
 	@Override

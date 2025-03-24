@@ -2,9 +2,9 @@ package com.skilldistillery.jets.entities;
 
 public class CommercialJet extends Jet implements CargoCarrier {
 
-	public CommercialJet(String jetName, String model, double speed, double range, long price, int capacity,
+	public CommercialJet(String jetName, String model, double speed, double range, long price, int armor,
 			long payload, String pilot) {
-		super("CommercialJet", jetName, model, speed, range, price, capacity, payload, pilot);
+		super("CommercialJet", jetName, model, speed, range, price, armor, payload, pilot);
 	}
 
 	

@@ -2,8 +2,8 @@ package com.skilldistillery.jets.entities;
 
 public class FighterJet extends Jet implements CombatReady {
 
-	public FighterJet(String jetName, String model, double speed, double range, long price, int capacity, long payload, String pilot) {
-		super("FighterJet", jetName, model, speed, range, price, capacity, payload, pilot);
+	public FighterJet(String jetName, String model, double speed, double range, long price, int armor, long payload, String pilot) {
+		super("FighterJet", jetName, model, speed, range, price, armor, payload, pilot);
 	}
 
 	@Override

@@ -12,8 +12,8 @@ public class Bomber extends Jet implements CombatReady {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Bomber(String jetName, String model, double speed, double range, long price, int capacity, long payload, String pilot) {
-	    super("Bomber", jetName, model, speed, range, price, capacity, payload, pilot);
+	public Bomber(String jetName, String model, double speed, double range, long price, int armor, long payload, String pilot) {
+	    super("Bomber", jetName, model, speed, range, price, armor, payload, pilot);
 	}
 
 	@Override

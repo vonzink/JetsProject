@@ -1,4 +1,4 @@
-package com.skilldistillery.jets.entities;
+/*package com.skilldistillery.jets.entities;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -25,35 +25,35 @@ public class JetData {
 					double speed = Double.parseDouble(fields[i]);
 					int range = Integer.parseInt(fields[i]);
 					long price = Long.parseLong(fields[i]);
-					int capacity = Integer.parseInt(fields[i]);
+					int armor = Integer.parseInt(fields[i]);
 					long payload = Long.parseLong(fields[i]);
 					String pilot = fields[i]; 
 
 
 					switch (classification) {
 					case "Bomber":
-						j = new Bomber(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Bomber(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "CargoPlane":
-						j = new CargoPlane(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new CargoPlane(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "CommercialJet":
-						j = new CommercialJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new CommercialJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "Drone":
-						j = new Drone(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Drone(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "FighterJet":
-						j = new FighterJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new FighterJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "Interceptor":
-						j = new Interceptor(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Interceptor(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "PrivateJet":
-						j = new PrivateJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new PrivateJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "ReconJet":
-						j = new ReconJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new ReconJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					default:
 						System.out.println("Unknown classification: " + classification);
@@ -78,4 +78,4 @@ public class JetData {
 		this.fileName = fileName;
 	}
 
-}
+}*/

@@ -10,6 +10,7 @@ public class FightMenu {
 	AirField airField = new AirField();
 	Scanner sc = new Scanner(System.in);
 	List<Jet> jets = airField.printJets(airField.getFileName());
+	private Jet chosen;
 	int answer = 0;
 
 	public void fightMenu() {
@@ -20,10 +21,10 @@ public class FightMenu {
 			System.out.println("------------------------------------");
 			System.out.println("          Choose Your Plane         ");
 			System.out.println("------------------------------------");
-			System.out.println("1. List Combat Ready Planes avaiable");
-			System.out.println("2. Add a combate plane              ");
-			System.out.println("3. choose your plane                ");
-			System.out.println("4. Return to main menu              ");
+			System.out.println("1. LIST COMBAT PLANES				");
+			System.out.println("2. ADD A PLANE			            ");
+			System.out.println("3. CHOOSE YOUR PLANE FOR BATTLE     ");
+			System.out.println("4. Return TO MAIN MENU              ");
 			System.out.println("9. Quit                             ");
 			System.out.println("------------------------------------");
 
@@ -53,37 +54,32 @@ public class FightMenu {
 
 				break;
 			case 3:
-				System.out.println("         CHOOSE YOUR PLANES       ");
-				System.out.println("------------------------------------");
-				int index = 1;
-				List<Jet> chosenPlane = new ArrayList<>();
-				for (Jet i : jets) {
-					if (i instanceof CombatReady) {
-						System.out.print(index + ": " + i);
-						chosenPlane.add(i);
-						index++;
-
-						System.out.println("Enter the number of the plane would like to use");
-						try {
-							answer = sc.nextInt();
-						} catch (Exception e) {
-							System.err.println("Choose a number");
-						}
-						Jet chosen = chosenPlane.get(index - 1);
-					
-					}
-				}
-				break;
+			    System.out.println("         CHOOSE YOUR PLANES       ");
+			    System.out.println("------------------------------------");
+			    List<Jet> combatPlanes = new ArrayList<>();
+			    int index = 1;
+			    for (Jet i : jets) {
+			        if (i instanceof CombatReady) {
+			            System.out.println(index + ": " + i);
+			            combatPlanes.add(i);
+			            index++;
+			        }
+			    }
+			    System.out.println("Enter the number of the plane you would like to use:");
+			    int selection = 0;
+			    try {
+			        selection = sc.nextInt();
+			    } catch (Exception e) {
+			        System.err.println("Please enter a valid number.");
+			        sc.nextLine();
+			        break;
+			    }
+			  
+			    chosen = combatPlanes.get(selection - 1);
+			    Battle battle = new Battle();
+			    battle.startBattle(chosen);
+			    
 			case 4:
-				System.out.println("     	 	   BATTLE   			  ");
-				System.out.println("------------------------------------");
-				for (Jet i : jets) {
-					if (i instanceof CombatReady) {
-						System.out.println(i);
-					}
-				}
-				break;
-			case 5:
 				System.out.println("       RETURN TO MAIN MENU          ");
 				System.out.println("------------------------------------");
 
@@ -98,9 +94,5 @@ public class FightMenu {
 				System.out.println("Please enter a valid option");
 			}
 
-		} while (answer != 9);
-		sc.close();
-	}
-
-	// Additional methods can use airField, jets, sc, and answer here
-}
+		}while(answer!=9);
+}}

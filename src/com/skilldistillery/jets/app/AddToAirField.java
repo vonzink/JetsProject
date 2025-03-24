@@ -1,4 +1,4 @@
-package com.skilldistillery.jets.app;
+ package com.skilldistillery.jets.app;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class AddToAirField {
 		String speed = ""; 
 		String range = "";
 		String price = "";
-		String capacity = "";
+		String armor = "";
 		String payload = "";
 		String pilot = "";
 
@@ -82,15 +82,15 @@ public class AddToAirField {
 		range = sc.nextLine();
 		System.out.println("Enter Price: ");
 		price = sc.nextLine();
-		System.out.println("Enter Capacity: ");
-		capacity = sc.nextLine();
+		System.out.println("Enter Armor: ");
+		armor = sc.nextLine();
 		System.out.println("Enter Payload: ");
 		payload = sc.nextLine();
 		System.out.println("Enter Pilots Name: ");
 		pilot = sc.nextLine();
 		
 		String newLine = String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s", classification, jetName, model, speed, range,
-				price, capacity, payload, pilot);
+				price, armor, payload, pilot);
 	
 		try {
 			FileWriter fw = new FileWriter("jetData.txt", true);

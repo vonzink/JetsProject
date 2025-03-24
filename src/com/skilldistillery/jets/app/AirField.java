@@ -32,35 +32,35 @@ public class AirField {
 					double speed = Double.parseDouble(list.get(3));
 					double range = Double.parseDouble(list.get(4));
 					long price = Long.parseLong(list.get(5));
-					int capacity = Integer.parseInt(list.get(6));
+					int armor = Integer.parseInt(list.get(6));
 					long payload = Long.parseLong(list.get(7));
 					String pilot = list.get(8); 
 
 		
 					switch (classification) {
 					case "Bomber":
-						j = new Bomber(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Bomber(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "CargoPlane":
-						j = new CargoPlane(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new CargoPlane(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "CommercialJet":
-						j = new CommercialJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new CommercialJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "Drone":
-						j = new Drone(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Drone(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "FighterJet":
-						j = new FighterJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new FighterJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "Interceptor":
-						j = new Interceptor(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new Interceptor(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "PrivateJet":
-						j = new PrivateJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new PrivateJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					case "ReconJet":
-						j = new ReconJet(jetName, model, speed, range, price, capacity, payload, pilot);
+						j = new ReconJet(jetName, model, speed, range, price, armor, payload, pilot);
 						break;
 					default:
 						System.out.println("Unknown classification: " + classification);

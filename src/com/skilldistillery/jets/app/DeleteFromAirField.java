@@ -27,6 +27,7 @@ public class DeleteFromAirField {
 			answer = sc.nextInt();
 		} catch (Exception e) {
 			System.err.println("Choose a number");
+			
 		}
 			jets.remove(answer - 1);
 			System.out.println("Jet removed successfully!");
@@ -35,7 +36,7 @@ public class DeleteFromAirField {
 			try (PrintWriter pw = new PrintWriter(new FileWriter("jetData.txt", false))) {
 				for (Jet j : jets) {
 					String line = String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s", j.getClassification(), j.getJetName(),
-							j.getModel(), j.getSpeed(), j.getRange(), j.getPrice(), j.getCapacity(), j.getPayload(),
+							j.getModel(), j.getSpeed(), j.getRange(), j.getPrice(), j.getArmor(), j.getPayload(),
 							j.getPilot());
 					pw.println(line);
 				}
@@ -43,6 +44,6 @@ public class DeleteFromAirField {
 				System.out.println("File updated successfully!");
 			} catch (IOException e) {
 				e.printStackTrace();
-			}sc.close(); 
+			}
 		} 
 	}
