@@ -24,7 +24,7 @@ public class FightMenu {
 			System.out.println("1. LIST COMBAT PLANES				");
 			System.out.println("2. ADD A PLANE			            ");
 			System.out.println("3. CHOOSE YOUR PLANE FOR BATTLE     ");
-			System.out.println("4. Return TO MAIN MENU              ");
+			System.out.println("4. RETURN TO MAIN MENU              ");
 			System.out.println("9. Quit                             ");
 			System.out.println("------------------------------------");
 
@@ -32,7 +32,7 @@ public class FightMenu {
 				answer = sc.nextInt();
 			} catch (Exception e) {
 				System.err.println("Invalid number, please enter a number");
-				sc.nextLine(); // clear the buffer
+				sc.nextLine();
 				continue;
 			}
 

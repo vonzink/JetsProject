@@ -30,7 +30,7 @@ public class Battle {
             int damageByChosen = (int)(Math.random() * 1000) + 1;
             int damageByEnemy = (int)(Math.random() * 1000) + 1;
           
-            System.out.println("Your plane deals " + damageByChosen + " damage to enemy plane.");
+            System.out.println(damageByChosen + " damage to enemy plane.");
             enemy.setArmor(enemy.getArmor() - damageByChosen);
             System.out.println();
             System.out.println();
@@ -38,14 +38,14 @@ public class Battle {
             System.out.println();
             
             
-            System.out.println("Enemy plane deals " + damageByEnemy + " damage to your plane.");
+            System.out.println( damageByEnemy + " damage to your plane.");
             chosen.setArmor(chosen.getArmor() - damageByEnemy);
             System.out.println();
             System.out.println();
             System.out.println();
             
-            System.out.println("Your plane capacity: " + chosen.getArmor());
-            System.out.println("Enemy plane capacity: " + enemy.getArmor());
+            System.out.println("Your plane armor: " + chosen.getArmor());
+            System.out.println("Enemy plane armor: " + enemy.getArmor());
             System.out.println("----------------------------");
             System.out.println();
             System.out.println();

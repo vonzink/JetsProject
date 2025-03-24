@@ -2,15 +2,10 @@ package com.skilldistillery.jets.entities;
 
 
 
-public class Bomber extends Jet implements CombatReady {
-
-
-	
-	
+public class Bomber extends Jet implements CombatReady {	
 
 	public Bomber() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Bomber(String jetName, String model, double speed, double range, long price, int armor, long payload, String pilot) {
 	    super("Bomber", jetName, model, speed, range, price, armor, payload, pilot);

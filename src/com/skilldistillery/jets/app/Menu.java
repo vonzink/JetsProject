@@ -108,7 +108,7 @@ public class Menu {
 				break;
 			case 9:
 				System.out.println("	Quit      ");
-				// ends program
+
 				break;
 			default:
 				System.out.println("Please enter an option");

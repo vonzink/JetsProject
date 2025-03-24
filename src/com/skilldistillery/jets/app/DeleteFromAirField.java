@@ -32,7 +32,6 @@ public class DeleteFromAirField {
 			jets.remove(answer - 1);
 			System.out.println("Jet removed successfully!");
 
-			// Now rewrite the file with the updated list using BufferedWriter
 			try (PrintWriter pw = new PrintWriter(new FileWriter("jetData.txt", false))) {
 				for (Jet j : jets) {
 					String line = String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s", j.getClassification(), j.getJetName(),

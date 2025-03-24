@@ -13,7 +13,6 @@ public class CargoPlane extends Jet implements CargoCarrier{
 	}
 	@Override
 	public void CargiCarrier() {
-		// TODO Auto-generated method stub
 		
 	}
 
